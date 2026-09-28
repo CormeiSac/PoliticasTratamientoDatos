@@ -1,636 +1,1264 @@
 <!DOCTYPE html>
 <html lang="es-PE">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Política de Tratamiento de Datos Personales | CORMEI S.A.C.</title>
-<meta name="description" content="Política de Tratamiento de Datos Personales de CORMEI S.A.C., conforme a la Ley N° 29733 y su Reglamento. Conoce qué datos tratamos, con qué finalidad y cómo ejercer tus derechos.">
-<meta name="robots" content="index, follow">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
-<style>
-/* =========================================================
-   TOKENS — cambia aquí los colores corporativos de CORMEI
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Políticas | CORMEI Contratistas Generales S.A.C.</title>
+    <meta name="description"
+        content="Políticas de CORMEI: Sistema Integrado de Gestión (SIG-POL-001), No Fumador (SSM-POL-001), Prevención y Sanción del Hostigamiento Sexual (RHU-POL-001) y Privacidad y Protección de Datos Personales (SIG-POL-002).">
+    <meta name="robots" content="index, follow">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Source+Sans+3:wght@400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        /* =========================================================
+   TOKENS — identidad CORMEI (tomada del documento oficial)
    ========================================================= */
-:root{
-  --acero:      #1C2733;   /* texto principal / encabezado */
-  --marca:      #1B4F72;   /* azul corporativo (reemplazar por el oficial) */
-  --marca-suave:#E6EEF4;
-  --ambar:      #C27C00;   /* acento de avisos (señalética industrial) */
-  --ambar-suave:#FFF4DC;
-  --papel:      #FFFFFF;
-  --fondo:      #F4F6F8;
-  --linea:      #D5DCE3;
-  --texto-2:    #4A5866;
-
-  --f-titulo: "Archivo", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  --f-texto:  "Source Serif 4", Georgia, "Times New Roman", serif;
-
-  --ancho-lectura: 68ch;
-  --radio: 6px;
-
-  box-sizing: border-box;
-  padding-top: env(safe-area-inset-top, 0px);
-  padding-bottom: env(safe-area-inset-bottom, 0px);
-}
-*,*::before,*::after{ box-sizing: inherit; }
-html{ scroll-behavior: smooth; scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 24px); }
-body{
-  margin:0; background:var(--fondo); color:var(--acero);
-  font-family:var(--f-texto); font-size:1.0625rem; line-height:1.7;
-  -webkit-font-smoothing:antialiased;
-}
-img{ max-width:100%; }
-a{ color:var(--marca); text-underline-offset:3px; }
-a:hover{ color:var(--acero); }
-:focus-visible{ outline:3px solid var(--ambar); outline-offset:2px; border-radius:2px; }
-
-.saltar{
-  position:absolute; left:-9999px; top:0; background:var(--acero); color:#fff;
-  padding:.75rem 1rem; z-index:100; font-family:var(--f-titulo);
-}
-.saltar:focus{ left:1rem; top:calc(env(safe-area-inset-top,0px) + 1rem); }
-
-/* Barra de progreso de lectura */
-.progreso{
-  position:fixed; top:0; left:0; height:3px; width:0; z-index:50;
-  background:var(--marca); padding-top:0;
-}
-
-/* =========================================================
-   ENCABEZADO
-   ========================================================= */
-.cabecera{
-  background:linear-gradient(180deg, #FFFFFF 0%, var(--marca-suave) 100%);
-  color:var(--acero);
-  border-bottom:4px solid var(--marca);
-}
-.cabecera__barra{
-  max-width:1200px; margin:0 auto; padding:1rem 1.5rem;
-  display:flex; align-items:center; justify-content:space-between; gap:1rem;
-}
-.logo{
-  font-family:var(--f-titulo); font-weight:800; font-size:1.35rem;
-  letter-spacing:.04em; color:var(--marca); text-decoration:none;
-}
-
-.portada{
-  max-width:1200px; margin:0 auto; padding:2.5rem 1.5rem 3rem;
-  display:grid; grid-template-columns: 1.4fr 1fr; gap:2.5rem; align-items:end;
-}
-.portada h1{
-  font-family:var(--f-titulo); font-weight:800; margin:0;
-  font-size:clamp(2rem, 4.5vw, 3.25rem); line-height:1.08; letter-spacing:-.01em;
-  max-width:18ch;
-}
-.portada p{ color:var(--texto-2); max-width:52ch; margin:1rem 0 0; font-size:1.05rem; }
-
-.ficha{
-  margin:0; background:var(--papel); border:1px solid var(--linea);
-  box-shadow:0 1px 2px rgba(28,39,51,.06);
-  border-radius:var(--radio); padding:1.1rem 1.25rem;
-  font-family:var(--f-titulo); font-size:.9rem;
-}
-.ficha div{ display:flex; justify-content:space-between; gap:1rem; padding:.45rem 0; border-bottom:1px solid var(--linea); }
-.ficha div:last-child{ border-bottom:0; }
-.ficha dt{ color:var(--texto-2); font-weight:500; }
-.ficha dd{ margin:0; font-weight:600; text-align:right; color:var(--acero); }
-
-/* =========================================================
-   AVISO DE CAMPOS PENDIENTES (solo desarrollo)
-   ========================================================= */
-.aviso-pendientes{
-  display:none; max-width:1200px; margin:1.25rem auto 0; padding:.85rem 1.25rem;
-  background:var(--ambar-suave); border-left:5px solid var(--ambar); color:#5C3B00;
-  font-family:var(--f-titulo); font-size:.95rem; border-radius:var(--radio);
-}
-.aviso-pendientes.visible{ display:block; }
-.pendiente{
-  background:var(--ambar-suave); color:#6B4300; border-bottom:2px dashed var(--ambar);
-  padding:0 .25em; font-family:var(--f-titulo); font-size:.92em; font-weight:600;
-}
-
-/* =========================================================
-   CUERPO: ÍNDICE + CONTENIDO
-   ========================================================= */
-.cuerpo{
-  max-width:1200px; margin:0 auto; padding:2rem 1.5rem 4rem;
-  display:grid; grid-template-columns:280px minmax(0,1fr); gap:2.5rem;
-}
-
-.indice{ position:sticky; top:calc(env(safe-area-inset-top,0px) + 1.5rem); align-self:start;
-  max-height:calc(100vh - 3rem); overflow:auto; }
-.indice details{ background:var(--papel); border:1px solid var(--linea); border-radius:var(--radio); }
-.indice summary{
-  font-family:var(--f-titulo); font-weight:700; padding:1rem 1.1rem; cursor:pointer;
-  list-style:none; display:flex; justify-content:space-between; align-items:center;
-}
-.indice summary::-webkit-details-marker{ display:none; }
-.indice summary::after{ content:"+"; font-size:1.3rem; line-height:1; color:var(--texto-2); }
-.indice details[open] summary::after{ content:"–"; }
-.indice ol{ list-style:none; margin:0; padding:0 .5rem .75rem; counter-reset:item; }
-.indice li{ counter-increment:item; }
-.indice a{
-  display:grid; grid-template-columns:2rem 1fr; gap:.25rem;
-  padding:.4rem .6rem; border-radius:4px; text-decoration:none;
-  font-family:var(--f-titulo); font-size:.9rem; line-height:1.35; color:var(--texto-2);
-  border-left:3px solid transparent;
-}
-.indice a::before{ content:counter(item); color:#8795A3; font-variant-numeric:tabular-nums; }
-.indice a:hover{ background:var(--fondo); color:var(--acero); }
-.indice a[aria-current="true"]{
-  background:var(--marca-suave); color:var(--marca); border-left-color:var(--marca); font-weight:600;
-}
-.indice a[aria-current="true"]::before{ color:var(--marca); }
-
-.documento{
-  background:var(--papel); border:1px solid var(--linea); border-radius:var(--radio);
-  padding:clamp(1.5rem, 4vw, 3.5rem);
-}
-.seccion{ max-width:var(--ancho-lectura); padding-bottom:2.25rem; margin-bottom:2.25rem; border-bottom:1px solid var(--linea); }
-.seccion:last-of-type{ border-bottom:0; margin-bottom:0; }
-.seccion h2{
-  font-family:var(--f-titulo); font-weight:700; font-size:1.55rem; line-height:1.25;
-  margin:0 0 1rem; display:flex; gap:.75rem; align-items:baseline;
-}
-.seccion h2 .num{
-  font-size:1rem; color:var(--marca); font-variant-numeric:tabular-nums;
-  min-width:2.1rem; padding:.1rem .45rem; border:1.5px solid var(--marca); border-radius:4px; text-align:center;
-}
-.seccion h3{ font-family:var(--f-titulo); font-weight:600; font-size:1.1rem; margin:1.5rem 0 .5rem; }
-.seccion p{ margin:0 0 1rem; }
-.seccion ul{ margin:0 0 1rem; padding-left:1.25rem; }
-.seccion li{ margin-bottom:.4rem; }
-.seccion li::marker{ color:var(--marca); }
-
-/* Definiciones */
-.definiciones{ margin:0; }
-.definiciones dt{ font-family:var(--f-titulo); font-weight:600; margin-top:1rem; }
-.definiciones dd{ margin:.2rem 0 0; color:var(--texto-2); }
-
-/* Tablas */
-.tabla-scroll{ overflow-x:auto; margin:0 0 1.25rem; border:1px solid var(--linea); border-radius:var(--radio); }
-table{ width:100%; border-collapse:collapse; font-size:.95rem; min-width:560px; }
-caption{ text-align:left; padding:.75rem 1rem; font-family:var(--f-titulo); font-weight:600; background:var(--fondo); border-bottom:1px solid var(--linea); }
-th,td{ text-align:left; vertical-align:top; padding:.75rem 1rem; border-bottom:1px solid var(--linea); }
-thead th{ font-family:var(--f-titulo); font-size:.85rem; color:var(--texto-2); background:#FAFBFC; font-weight:600; }
-tbody tr:last-child td{ border-bottom:0; }
-td:first-child{ font-family:var(--f-titulo); font-weight:600; }
-
-/* Bloque del responsable */
-.responsable{
-  display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:0;
-  border:1px solid var(--linea); border-radius:var(--radio); margin:0 0 1rem; overflow:hidden;
-}
-.responsable div{ padding:.9rem 1.1rem; border-bottom:1px solid var(--linea); }
-.responsable div:nth-child(odd){ border-right:1px solid var(--linea); }
-.responsable dt{ font-family:var(--f-titulo); font-size:.8rem; color:var(--texto-2); font-weight:500; }
-.responsable dd{ margin:.15rem 0 0; font-family:var(--f-titulo); font-weight:600; }
-
-/* Derechos: sección destacada */
-.derechos{ display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:.75rem; margin:0 0 1.5rem; padding:0; list-style:none; }
-.derechos li{ margin:0; padding:1rem 1.1rem; border:1px solid var(--linea); border-top:4px solid var(--marca); border-radius:var(--radio); }
-.derechos strong{ display:block; font-family:var(--f-titulo); margin-bottom:.25rem; }
-.derechos span{ color:var(--texto-2); font-size:.97rem; }
-
-.pasos{ counter-reset:paso; list-style:none; padding:0 !important; }
-.pasos li{ counter-increment:paso; position:relative; padding-left:2.75rem; margin-bottom:1rem; }
-.pasos li::before{
-  content:counter(paso); position:absolute; left:0; top:.1rem;
-  width:1.9rem; height:1.9rem; border-radius:50%; background:var(--acero); color:#fff;
-  font-family:var(--f-titulo); font-weight:700; font-size:.9rem; display:grid; place-items:center;
-}
-
-.contacto{
-  background:var(--marca); color:#fff; border-radius:var(--radio); padding:1.5rem;
-  display:flex; flex-wrap:wrap; gap:1rem 2rem; align-items:center; justify-content:space-between;
-}
-.contacto p{ margin:0; max-width:40ch; }
-.contacto strong{ font-family:var(--f-titulo); display:block; font-size:1.15rem; margin-bottom:.25rem; }
-.boton{
-  display:inline-block; background:#fff; color:var(--marca); text-decoration:none;
-  font-family:var(--f-titulo); font-weight:700; padding:.8rem 1.25rem; border-radius:4px;
-  border:2px solid #fff;
-}
-.boton:hover{ background:transparent; color:#fff; }
-
-.nota{
-  border-left:4px solid var(--ambar); background:var(--ambar-suave);
-  padding:.9rem 1.1rem; border-radius:0 var(--radio) var(--radio) 0; margin:0 0 1rem;
-}
-
-/* Pie */
-.pie{ background:var(--acero); color:#A9BACB; font-family:var(--f-titulo); font-size:.9rem; }
-.pie__int{ max-width:1200px; margin:0 auto; padding:1.75rem 1.5rem; display:flex; flex-wrap:wrap; gap:1rem; justify-content:space-between; }
-.pie a{ color:#fff; }
-
-
-.arriba{
-  position:fixed; right:1.25rem; bottom:calc(env(safe-area-inset-bottom,0px) + 1.25rem);
-  width:44px; height:44px; border-radius:50%; border:0; cursor:pointer;
-  background:var(--acero); color:#fff; font-size:1.2rem; opacity:0; pointer-events:none;
-  transition:opacity .2s;
-}
-.arriba.visible{ opacity:1; pointer-events:auto; }
-
-/* =========================================================
-   RESPONSIVE
-   ========================================================= */
-@media (max-width: 960px){
-  .portada{ grid-template-columns:1fr; gap:1.75rem; }
-  .cuerpo{ grid-template-columns:1fr; gap:1.25rem; }
-  .indice{ position:static; max-height:none; }
-}
-@media (max-width: 620px){
-  .responsable, .derechos{ grid-template-columns:1fr; }
-  .responsable div:nth-child(odd){ border-right:0; }
-  .seccion h2{ font-size:1.3rem; }
-}
-@media (prefers-reduced-motion: reduce){
-  html{ scroll-behavior:auto; }
-  .arriba{ transition:none; }
-}
-
-/* =========================================================
-   IMPRESIÓN
-   ========================================================= */
-@media print{
-  :root{ padding:0; }
-  body{ background:#fff; font-size:11pt; }
-  .progreso, .indice, .arriba, .aviso-pendientes, .saltar{ display:none !important; }
-  .cabecera, .pie{ background:#fff; color:#000; border-bottom:2px solid #000; }
-  .logo, .portada p, .ficha dt, .ficha dd{ color:#000; }
-  .ficha{ border-color:#999; background:#fff; }
-  .cuerpo{ display:block; padding:0; }
-  .documento{ border:0; padding:0; }
-  .seccion{ max-width:none; break-inside:avoid-page; }
-  .contacto{ background:#fff; color:#000; border:1px solid #000; }
-  .boton{ display:none; }
-  a{ color:#000; }
-}
-</style>
-</head>
-<body>
-<a class="saltar" href="#contenido">Saltar al contenido</a>
-<div class="progreso" id="progreso" aria-hidden="true"></div>
-
-<header class="cabecera">
-  <div class="cabecera__barra">
-    <a class="logo" href="/" aria-label="CORMEI, ir al inicio">CORMEI</a>
-  </div>
-
-  <div class="portada">
-    <div>
-      <h1>Política de Tratamiento de Datos Personales</h1>
-      <p>Qué datos personales recopilamos, para qué los usamos, cómo los protegemos y cómo puedes ejercer tus derechos sobre ellos.</p>
-    </div>
-    <dl class="ficha">
-      <div><dt>Responsable</dt><dd>CORMEI S.A.C.</dd></div>
-      <div><dt>Vigente desde</dt><dd><time datetime="2026-09-28">28/09/2026</time></dd></div>
-      <div><dt>Marco legal</dt><dd>Ley N° 29733 y su Reglamento</dd></div>
-    </dl>
-  </div>
-</header>
-
-<div class="aviso-pendientes" id="avisoPendientes" role="status"></div>
-
-<div class="cuerpo">
-  <nav class="indice" aria-label="Índice de la política">
-    <details id="indiceDetalle" open>
-      <summary>Contenido</summary>
-      <ol>
-        <li><a href="#objetivo">Objetivo</a></li>
-        <li><a href="#alcance">Alcance</a></li>
-        <li><a href="#marco-legal">Marco legal</a></li>
-        <li><a href="#definiciones">Definiciones</a></li>
-        <li><a href="#responsable">Responsable del tratamiento</a></li>
-        <li><a href="#principios">Principios</a></li>
-        <li><a href="#datos">Datos que tratamos y finalidades</a></li>
-        <li><a href="#bancos">Bancos de datos</a></li>
-        <li><a href="#consentimiento">Consentimiento</a></li>
-        <li><a href="#transferencias">Encargados y transferencias</a></li>
-        <li><a href="#conservacion">Plazo de conservación</a></li>
-        <li><a href="#seguridad">Medidas de seguridad</a></li>
-        <li><a href="#derechos">Tus derechos</a></li>
-        <li><a href="#cookies">Sitio web y cookies</a></li>
-        <li><a href="#menores">Menores de edad</a></li>
-        <li><a href="#cambios">Modificaciones</a></li>
-        <li><a href="#vigencia">Vigencia</a></li>
-      </ol>
-    </details>
-  </nav>
-
-  <main id="contenido" class="documento" tabindex="-1">
-
-    <section class="seccion" id="objetivo">
-      <h2><span class="num">1</span>Objetivo</h2>
-      <p>Esta política establece los criterios con los que CORMEI S.A.C. (en adelante, «CORMEI») recopila, registra, almacena, utiliza, transfiere y elimina los datos personales de las personas con las que se relaciona, garantizando el derecho fundamental a la protección de datos personales reconocido en el artículo 2, numeral 6, de la Constitución Política del Perú.</p>
-    </section>
-
-    <section class="seccion" id="alcance">
-      <h2><span class="num">2</span>Alcance</h2>
-      <p>Esta política se aplica a todo tratamiento de datos personales que CORMEI realice, en medios físicos o digitales, respecto de:</p>
-      <ul>
-        <li>Clientes y sus representantes o contactos comerciales.</li>
-        <li>Proveedores, contratistas y subcontratistas, y su personal.</li>
-        <li>Trabajadores, extrabajadores y postulantes a puestos de trabajo.</li>
-        <li>Visitantes de nuestras oficinas, talleres, plantas y obras.</li>
-        <li>Usuarios de nuestro sitio web y de nuestros canales de contacto.</li>
-      </ul>
-      <p>Es de cumplimiento obligatorio para todos los trabajadores de CORMEI y para los terceros que traten datos personales por encargo de la empresa.</p>
-    </section>
-
-    <section class="seccion" id="marco-legal">
-      <h2><span class="num">3</span>Marco legal</h2>
-      <ul>
-        <li>Constitución Política del Perú, artículo 2, numeral 6.</li>
-        <li>Ley N° 29733, Ley de Protección de Datos Personales.</li>
-        <li>Reglamento de la Ley N° 29733, aprobado por Decreto Supremo N° 016-2024-JUS.</li>
-        <li>Directiva de Seguridad de la Información administrada por Bancos de Datos Personales y demás normas emitidas por la Autoridad Nacional de Protección de Datos Personales.</li>
-      </ul>
-    </section>
-
-    <section class="seccion" id="definiciones">
-      <h2><span class="num">4</span>Definiciones</h2>
-      <dl class="definiciones">
-        <dt>Datos personales</dt>
-        <dd>Toda información sobre una persona natural que la identifica o la hace identificable.</dd>
-        <dt>Datos sensibles</dt>
-        <dd>Datos biométricos, datos sobre origen racial o étnico, ingresos económicos, opiniones políticas, convicciones religiosas o filosóficas, afiliación sindical, salud o vida sexual, entre otros señalados por la ley.</dd>
-        <dt>Titular de datos personales</dt>
-        <dd>La persona natural a quien corresponden los datos personales.</dd>
-        <dt>Banco de datos personales</dt>
-        <dd>Conjunto organizado de datos personales, automatizado o no, independientemente del soporte.</dd>
-        <dt>Tratamiento</dt>
-        <dd>Cualquier operación sobre datos personales: recopilación, registro, organización, almacenamiento, consulta, uso, transferencia, supresión, entre otras.</dd>
-        <dt>Encargado del tratamiento</dt>
-        <dd>Persona natural o jurídica que trata datos personales por cuenta de CORMEI.</dd>
-        <dt>Flujo transfronterizo</dt>
-        <dd>Transferencia de datos personales a un destinatario ubicado fuera del territorio peruano.</dd>
-      </dl>
-    </section>
-
-    <section class="seccion" id="responsable">
-      <h2><span class="num">5</span>Responsable del tratamiento</h2>
-      <p>El titular de los bancos de datos personales y responsable de su tratamiento es:</p>
-      <dl class="responsable">
-        <div><dt>Razón social</dt><dd>CORMEI S.A.C.</dd></div>
-        <div><dt>RUC</dt><dd>20102279256</dd></div>
-        <div><dt>Domicilio</dt><dd>Av. Faisane 284</dd></div>
-        <div><dt>Correo de datos personales</dt><dd><a href="mailto:sistemas@cormei.com">sistemas@cormei.com</a></dd></div>
-        <div><dt>Teléfono</dt><dd><a href="tel:+51990172669">+51 990 172 669</a></dd></div>
-        <div><dt>Área responsable</dt><dd>Tecnologías de la Información (TI)</dd></div>
-      </dl>
-    </section>
-
-    <section class="seccion" id="principios">
-      <h2><span class="num">6</span>Principios</h2>
-      <p>CORMEI trata los datos personales conforme a los principios establecidos en la Ley N° 29733:</p>
-      <ul>
-        <li><strong>Legalidad:</strong> el tratamiento se realiza conforme a la ley y nunca por medios fraudulentos, desleales o ilícitos.</li>
-        <li><strong>Consentimiento:</strong> se requiere el consentimiento del titular, salvo las excepciones previstas por ley.</li>
-        <li><strong>Finalidad:</strong> los datos se recopilan para finalidades determinadas, explícitas y lícitas, y no se usan para fines distintos.</li>
-        <li><strong>Proporcionalidad:</strong> solo se tratan los datos adecuados, relevantes y no excesivos para la finalidad.</li>
-        <li><strong>Calidad:</strong> los datos deben ser veraces, exactos y actualizados.</li>
-        <li><strong>Seguridad:</strong> se aplican medidas técnicas, organizativas y legales para protegerlos.</li>
-        <li><strong>Disposición de recurso:</strong> el titular cuenta con las vías administrativas o jurisdiccionales para reclamar.</li>
-        <li><strong>Nivel de protección adecuado:</strong> en las transferencias internacionales se garantiza un nivel de protección suficiente.</li>
-      </ul>
-    </section>
-
-    <section class="seccion" id="datos">
-      <h2><span class="num">7</span>Datos que tratamos y finalidades</h2>
-      <p>Los datos que tratamos dependen de la relación que tengas con CORMEI:</p>
-      <div class="tabla-scroll" tabindex="0" role="region" aria-label="Tabla de datos y finalidades">
-        <table>
-          <caption>Categorías de titulares, datos y finalidades</caption>
-          <thead>
-            <tr><th scope="col">Titular</th><th scope="col">Datos que tratamos</th><th scope="col">Finalidad</th></tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Clientes y contactos comerciales</td>
-              <td>Nombre, documento de identidad, cargo, empresa, correo, teléfono.</td>
-              <td>Atender cotizaciones, ejecutar contratos, facturar, coordinar proyectos y dar seguimiento comercial.</td>
-            </tr>
-            <tr>
-              <td>Proveedores y contratistas</td>
-              <td>Nombre, documento de identidad, datos de contacto, datos de su personal asignado.</td>
-              <td>Evaluar y homologar proveedores, gestionar compras y servicios, pagos y control de acceso a obra.</td>
-            </tr>
-            <tr>
-              <td>Trabajadores</td>
-              <td>Datos de identificación y contacto, datos laborales, remunerativos, bancarios, de asistencia y de salud ocupacional.</td>
-              <td>Gestionar la relación laboral, planillas, obligaciones tributarias y previsionales, y seguridad y salud en el trabajo.</td>
-            </tr>
-            <tr>
-              <td>Postulantes</td>
-              <td>Currículum, formación, experiencia, datos de contacto.</td>
-              <td>Evaluar su candidatura en procesos de selección.</td>
-            </tr>
-            <tr>
-              <td>Visitantes</td>
-              <td>Nombre, documento de identidad, imagen captada por videovigilancia.</td>
-              <td>Controlar el acceso y garantizar la seguridad de personas e instalaciones.</td>
-            </tr>
-            <tr>
-              <td>Usuarios del sitio web</td>
-              <td>Nombre, correo, teléfono, empresa y mensaje enviado por formulario; datos de navegación.</td>
-              <td>Responder consultas y solicitudes de cotización, y mejorar el funcionamiento del sitio.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p>Los datos sensibles, como los de salud ocupacional de los trabajadores, se tratan únicamente cuando lo exige la normativa laboral o de seguridad y salud en el trabajo, o con consentimiento expreso y por escrito del titular.</p>
-    </section>
-
-    <section class="seccion" id="bancos">
-      <h2><span class="num">8</span>Bancos de datos</h2>
-      <p>Los datos personales se almacenan en los siguientes bancos de datos, inscritos en el Registro Nacional de Protección de Datos Personales:</p>
-      <div class="tabla-scroll" tabindex="0" role="region" aria-label="Tabla de bancos de datos">
-        <table>
-          <caption>Bancos de datos personales de CORMEI</caption>
-          <thead>
-            <tr><th scope="col">Banco de datos</th><th scope="col">Código de inscripción</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Clientes</td><td><span class="pendiente">[Código RNPDP]</span></td></tr>
-            <tr><td>Proveedores</td><td><span class="pendiente">[Código RNPDP]</span></td></tr>
-            <tr><td>Trabajadores</td><td><span class="pendiente">[Código RNPDP]</span></td></tr>
-            <tr><td>Postulantes</td><td><span class="pendiente">[Código RNPDP]</span></td></tr>
-            <tr><td>Videovigilancia</td><td><span class="pendiente">[Código RNPDP]</span></td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section class="seccion" id="consentimiento">
-      <h2><span class="num">9</span>Consentimiento</h2>
-      <p>Cuando se requiera, CORMEI obtendrá tu consentimiento de forma previa, libre, expresa, inequívoca e informada. Para datos sensibles, el consentimiento será además por escrito.</p>
-      <p>No será necesario el consentimiento en los supuestos del artículo 14 de la Ley N° 29733, entre ellos cuando los datos sean necesarios para la preparación, celebración y ejecución de una relación contractual en la que el titular sea parte, o cuando su tratamiento sea necesario para cumplir una obligación legal.</p>
-      <p>Puedes revocar tu consentimiento en cualquier momento, sin efectos retroactivos, a través del canal indicado en la sección 13.</p>
-    </section>
-
-    <section class="seccion" id="transferencias">
-      <h2><span class="num">10</span>Encargados y transferencias</h2>
-      <p>CORMEI puede compartir datos personales con terceros que prestan servicios por encargo de la empresa, con quienes se suscriben acuerdos que los obligan a tratarlos solo para la finalidad encomendada y con las mismas medidas de seguridad:</p>
-      <ul>
-        <li><span class="pendiente">[Proveedor de alojamiento web y correo electrónico]</span></li>
-        <li><span class="pendiente">[Entidades bancarias para pago de remuneraciones y proveedores]</span></li>
-        <li><span class="pendiente">[Proveedores de salud ocupacional, seguros o servicios de TI]</span></li>
-      </ul>
-      <p>Asimismo, se comunicarán datos a entidades públicas cuando lo exija la ley, como SUNAT, SUNAFIL, EsSalud o el Ministerio de Trabajo y Promoción del Empleo.</p>
-      <p>Si algún encargado se ubica fuera del Perú, el flujo transfronterizo se realizará garantizando un nivel de protección adecuado, conforme a la normativa vigente.</p>
-    </section>
-
-    <section class="seccion" id="conservacion">
-      <h2><span class="num">11</span>Plazo de conservación</h2>
-      <p>Los datos se conservan durante el tiempo necesario para cumplir la finalidad para la que fueron recopilados y, después, durante los plazos que exijan las normas laborales, tributarias, contables o de seguridad y salud en el trabajo. Cumplidos esos plazos, se eliminan o anonimizan de forma segura.</p>
-      <p>Los datos de postulantes no seleccionados se conservan por <span class="pendiente">[plazo]</span>, salvo que el titular autorice un plazo mayor para futuros procesos. Las grabaciones de videovigilancia se conservan por <span class="pendiente">[plazo]</span>, salvo que se requieran como evidencia de un incidente.</p>
-    </section>
-
-    <section class="seccion" id="seguridad">
-      <h2><span class="num">12</span>Medidas de seguridad</h2>
-      <p>CORMEI adopta medidas técnicas, organizativas y legales para proteger los datos personales contra su pérdida, alteración, acceso no autorizado o uso indebido, entre ellas:</p>
-      <ul>
-        <li>Control de accesos por usuario y perfil a los sistemas internos.</li>
-        <li>Conexiones cifradas en el sitio web y en los sistemas expuestos a internet.</li>
-        <li>Copias de respaldo periódicas.</li>
-        <li>Obligaciones de confidencialidad para trabajadores y encargados.</li>
-        <li>Resguardo físico de la documentación en papel.</li>
-      </ul>
-      <p>Ante un incidente de seguridad que afecte datos personales, CORMEI actuará conforme a lo dispuesto por la normativa vigente, incluida la comunicación a la Autoridad y a los titulares afectados cuando corresponda.</p>
-    </section>
-
-    <section class="seccion" id="derechos">
-      <h2><span class="num">13</span>Tus derechos</h2>
-      <p>Como titular de datos personales, puedes ejercer en cualquier momento, de forma gratuita, los siguientes derechos:</p>
-      <ul class="derechos">
-        <li><strong>Información</strong><span>Saber qué datos tuyos tratamos, con qué finalidad y a quién se comunican.</span></li>
-        <li><strong>Acceso</strong><span>Obtener la información sobre tus datos que se encuentra en nuestros bancos de datos.</span></li>
-        <li><strong>Rectificación</strong><span>Actualizar o corregir datos inexactos, incompletos o desactualizados.</span></li>
-        <li><strong>Cancelación</strong><span>Solicitar la supresión de tus datos cuando ya no sean necesarios o hayas revocado tu consentimiento.</span></li>
-        <li><strong>Oposición</strong><span>Oponerte al tratamiento de tus datos por un motivo legítimo y fundado.</span></li>
-        <li><strong>Tratamiento objetivo</strong><span>No ser objeto de decisiones basadas únicamente en un tratamiento automatizado que te afecte significativamente.</span></li>
-      </ul>
-
-      <h3>Cómo presentar tu solicitud</h3>
-      <ol class="pasos">
-        <li>Envía tu solicitud al correo <a href="mailto:sistemas@cormei.com">sistemas@cormei.com</a> o preséntala en nuestro domicilio.</li>
-        <li>Incluye tu nombre completo, copia de tu documento de identidad (o el de tu representante, con el poder correspondiente), el derecho que deseas ejercer, un domicilio o correo para notificarte y, de ser el caso, los documentos que sustenten tu pedido.</li>
-        <li>Te responderemos dentro de los plazos establecidos por la normativa de protección de datos personales.</li>
-      </ol>
-
-      <div class="contacto">
-        <p><strong>¿Quieres ejercer tus derechos?</strong>Escríbenos indicando el derecho y adjuntando tu documento de identidad.</p>
-        <a class="boton" href="mailto:sistemas@cormei.com?subject=Solicitud%20de%20derechos%20ARCO">Enviar solicitud por correo</a>
-      </div>
-
-      <h3>Si no estás conforme con la respuesta</h3>
-      <p>Si consideras que no se atendió tu solicitud o que se vulneraron tus derechos, puedes presentar una reclamación ante la Autoridad Nacional de Protección de Datos Personales del Ministerio de Justicia y Derechos Humanos.</p>
-    </section>
-
-    <section class="seccion" id="cookies">
-      <h2><span class="num">14</span>Sitio web y cookies</h2>
-      <p>Nuestro sitio web puede usar cookies y tecnologías similares para su funcionamiento técnico y para obtener estadísticas de uso anónimas. Puedes configurar tu navegador para bloquear o eliminar las cookies; algunas funciones del sitio podrían dejar de estar disponibles.</p>
-      <p>Al enviar un formulario de contacto o cotización, tus datos se usarán únicamente para responder tu solicitud, conforme a la sección 7.</p>
-      <p class="nota">Herramientas de analítica o publicidad en uso: <span class="pendiente">[p. ej. Google Analytics, Meta Pixel o ninguna]</span>.</p>
-    </section>
-
-    <section class="seccion" id="menores">
-      <h2><span class="num">15</span>Menores de edad</h2>
-      <p>Los servicios de CORMEI están dirigidos a empresas y personas mayores de edad. No recopilamos intencionalmente datos de menores de edad. Si tomamos conocimiento de haberlos recibido sin la autorización de sus padres o tutores, los eliminaremos.</p>
-    </section>
-
-    <section class="seccion" id="cambios">
-      <h2><span class="num">16</span>Modificaciones</h2>
-      <p>CORMEI puede actualizar esta política para adecuarla a cambios normativos o a nuevas actividades de tratamiento. La versión vigente estará siempre publicada en esta página, con su fecha de vigencia.</p>
-    </section>
-
-    <section class="seccion" id="vigencia">
-      <h2><span class="num">17</span>Vigencia</h2>
-      <p>Esta política entra en vigencia el <time datetime="2026-09-28">28 de septiembre de 2026</time> y permanece vigente mientras no sea modificada o reemplazada.</p>
-    </section>
-
-  </main>
-</div>
-
-<footer class="pie">
-  <div class="pie__int">
-    <span>© <span id="anio"></span> CORMEI S.A.C. Todos los derechos reservados.</span>
-    <a href="/">Volver al sitio</a>
-  </div>
-</footer>
-
-<button class="arriba" id="btnArriba" type="button" aria-label="Volver al inicio de la página">↑</button>
-
-<script>
-(function () {
-  "use strict";
-
-  // Año del pie
-  document.getElementById("anio").textContent = new Date().getFullYear();
-
-  // Aviso de campos pendientes (ayuda a no publicar con datos por completar)
-  var pendientes = document.querySelectorAll(".pendiente").length;
-  var aviso = document.getElementById("avisoPendientes");
-  if (pendientes > 0) {
-    aviso.textContent = "Faltan " + pendientes + " datos por completar (resaltados en ámbar). Complétalos antes de publicar.";
-    aviso.classList.add("visible");
-  }
-
-  // Índice plegado por defecto en móvil
-  var indice = document.getElementById("indiceDetalle");
-  var mqMovil = window.matchMedia("(max-width: 960px)");
-  function ajustarIndice() { indice.open = !mqMovil.matches; }
-  ajustarIndice();
-  if (mqMovil.addEventListener) mqMovil.addEventListener("change", ajustarIndice);
-
-  // En móvil, cerrar el índice al elegir una sección
-  indice.addEventListener("click", function (e) {
-    if (e.target.closest("a") && mqMovil.matches) indice.open = false;
-  });
-
-  // Resaltado de la sección activa en el índice
-  var enlaces = document.querySelectorAll(".indice a");
-  var mapa = {};
-  enlaces.forEach(function (a) { mapa[a.getAttribute("href").slice(1)] = a; });
-
-  if ("IntersectionObserver" in window) {
-    var observador = new IntersectionObserver(function (entradas) {
-      entradas.forEach(function (en) {
-        if (en.isIntersecting) {
-          enlaces.forEach(function (a) { a.removeAttribute("aria-current"); });
-          var activo = mapa[en.target.id];
-          if (activo) activo.setAttribute("aria-current", "true");
+        :root {
+            --marca: #C8102E;
+            --marca-osc: #9E0B24;
+            --marca-suave: #FCEDEF;
+            --gris: #6D6E71;
+            --acero: #2B2F36;
+            --texto-2: #5A626C;
+            --papel: #FFFFFF;
+            --fondo: #F4F4F5;
+            --linea: #E1E3E6;
+            --f-titulo: "Montserrat", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            --f-texto: "Source Sans 3", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            --ancho-lectura: 74ch;
+            --radio: 6px;
+            box-sizing: border-box;
+            padding-top: env(safe-area-inset-top, 0px);
+            padding-bottom: env(safe-area-inset-bottom, 0px);
         }
-      });
-    }, { rootMargin: "-20% 0px -70% 0px" });
-    document.querySelectorAll(".seccion").forEach(function (s) { observador.observe(s); });
-  }
 
-  // Barra de progreso y botón volver arriba
-  var barra = document.getElementById("progreso");
-  var btnArriba = document.getElementById("btnArriba");
-  var pendienteFrame = false;
-  function alDesplazar() {
-    var h = document.documentElement;
-    var total = h.scrollHeight - h.clientHeight;
-    barra.style.width = (total > 0 ? (h.scrollTop / total) * 100 : 0) + "%";
-    btnArriba.classList.toggle("visible", h.scrollTop > 600);
-    pendienteFrame = false;
-  }
-  window.addEventListener("scroll", function () {
-    if (!pendienteFrame) { pendienteFrame = true; requestAnimationFrame(alDesplazar); }
-  }, { passive: true });
-  alDesplazar();
+        *,
+        *::before,
+        *::after {
+            box-sizing: inherit;
+        }
 
-  btnArriba.addEventListener("click", function () {
-    window.scrollTo({ top: 0 });
-    document.querySelector(".logo").focus();
-  });
-})();
-</script>
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: calc(env(safe-area-inset-top, 0px) + 24px);
+        }
+
+        body {
+            margin: 0;
+            background: var(--fondo);
+            color: var(--acero);
+            font-family: var(--f-texto);
+            font-size: 1.075rem;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            color: var(--marca);
+            text-underline-offset: 3px;
+        }
+
+        a:hover {
+            color: var(--marca-osc);
+        }
+
+        :focus-visible {
+            outline: 3px solid var(--marca);
+            outline-offset: 2px;
+            border-radius: 2px;
+        }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        .saltar {
+            position: absolute;
+            left: -9999px;
+            top: 0;
+            background: var(--acero);
+            color: #fff;
+            padding: .75rem 1rem;
+            z-index: 100;
+            font-family: var(--f-titulo);
+        }
+
+        .saltar:focus {
+            left: 1rem;
+            top: calc(env(safe-area-inset-top, 0px) + 1rem);
+        }
+
+        .progreso {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            width: 0;
+            z-index: 50;
+            background: var(--acero);
+        }
+
+        /* ===================== ENCABEZADO ===================== */
+        .cabecera {
+            background: var(--papel);
+            border-top: 10px solid var(--marca);
+            border-bottom: 1px solid var(--linea);
+        }
+
+        .cabecera__int {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 1.25rem 1.5rem;
+        }
+
+        .logo {
+            display: inline-flex;
+            flex-direction: column;
+            text-decoration: none;
+            line-height: 1;
+        }
+
+        .logo__nombre {
+            font-family: var(--f-titulo);
+            font-weight: 800;
+            font-size: 1.8rem;
+            color: var(--marca);
+        }
+
+        .logo__lema {
+            font-family: var(--f-titulo);
+            font-weight: 600;
+            font-size: .58rem;
+            letter-spacing: .06em;
+            color: var(--gris);
+            margin-top: .3rem;
+        }
+
+        /* ===================== CUERPO ===================== */
+        .cuerpo {
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 3rem;
+            display: grid;
+            grid-template-columns: 300px minmax(0, 1fr);
+            gap: 2rem;
+        }
+
+        .indice {
+            position: sticky;
+            top: calc(env(safe-area-inset-top, 0px) + 1.25rem);
+            align-self: start;
+            max-height: calc(100vh - 2.5rem);
+            overflow: auto;
+        }
+
+        .indice details {
+            background: var(--papel);
+            border: 1px solid var(--linea);
+            border-radius: var(--radio);
+        }
+
+        .indice summary {
+            font-family: var(--f-titulo);
+            font-weight: 700;
+            padding: 1rem 1.1rem;
+            cursor: pointer;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .indice summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .indice summary::after {
+            content: "+";
+            font-size: 1.3rem;
+            line-height: 1;
+            color: var(--texto-2);
+        }
+
+        .indice details[open] summary::after {
+            content: "–";
+        }
+
+        .indice ol {
+            list-style: none;
+            margin: 0;
+            padding: 0 .5rem .75rem;
+        }
+
+        .indice ol ol {
+            padding: .15rem 0 .35rem .6rem;
+            border-left: 2px solid var(--linea);
+            margin-left: .75rem;
+        }
+
+        .indice a {
+            display: block;
+            padding: .4rem .6rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-family: var(--f-titulo);
+            font-size: .8rem;
+            font-weight: 600;
+            line-height: 1.35;
+            color: var(--acero);
+            border-left: 3px solid transparent;
+        }
+
+        .indice a small {
+            display: block;
+            font-size: .68rem;
+            font-weight: 600;
+            color: var(--marca);
+            margin-top: .1rem;
+        }
+
+        .indice ol ol a {
+            display: grid;
+            grid-template-columns: 1.6rem 1fr;
+            font-weight: 500;
+            color: var(--texto-2);
+            padding: .3rem .5rem;
+        }
+
+        .indice ol ol a span {
+            color: #9A9FA6;
+            font-variant-numeric: tabular-nums;
+        }
+
+        .indice a:hover {
+            background: var(--fondo);
+        }
+
+        .indice a[aria-current="true"] {
+            background: var(--marca-suave);
+            color: var(--marca-osc);
+            border-left-color: var(--marca);
+        }
+
+        .indice a[aria-current="true"] span {
+            color: var(--marca);
+        }
+
+        .contenido {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            min-width: 0;
+        }
+
+        /* Cada política = una hoja, como en el PDF */
+        .politica {
+            background: var(--papel);
+            border: 1px solid var(--linea);
+            border-radius: var(--radio);
+            overflow: hidden;
+        }
+
+        .politica__cabecera {
+            padding: clamp(1.5rem, 4vw, 2.75rem) clamp(1.5rem, 4vw, 3rem) 1.5rem;
+            border-top: 6px solid var(--marca);
+        }
+
+        .politica__kicker {
+            font-family: var(--f-titulo);
+            font-weight: 600;
+            font-size: 1.3rem;
+            color: var(--gris);
+            margin: 0;
+        }
+
+        .politica__titulo {
+            font-family: var(--f-titulo);
+            font-weight: 800;
+            font-size: clamp(1.6rem, 3.6vw, 2.5rem);
+            line-height: 1.1;
+            color: var(--marca);
+            margin: .15rem 0 .6rem;
+        }
+
+        .politica__codigo {
+            font-family: var(--f-titulo);
+            font-weight: 500;
+            font-size: .92rem;
+            color: var(--marca);
+            margin: 0;
+        }
+
+        .politica__cuerpo {
+            padding: 0 clamp(1.5rem, 4vw, 3rem) clamp(1.5rem, 4vw, 2.75rem);
+        }
+
+        .politica__cuerpo>* {
+            max-width: var(--ancho-lectura);
+        }
+
+        .politica__subtitulo {
+            font-family: var(--f-titulo);
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--gris);
+            margin: 0 0 .75rem;
+        }
+
+        .politica__cuerpo p {
+            margin: 0 0 1rem;
+        }
+
+        .politica__cuerpo ul {
+            margin: 0 0 1rem;
+            padding-left: 1.25rem;
+        }
+
+        .politica__cuerpo li {
+            margin-bottom: .45rem;
+        }
+
+        .politica__cuerpo li::marker {
+            color: var(--marca);
+        }
+
+        .compromisos {
+            margin: 0 0 1rem;
+            padding-left: 1.6rem;
+        }
+
+        .compromisos li {
+            margin-bottom: .6rem;
+        }
+
+        .compromisos li::marker {
+            color: var(--marca);
+            font-family: var(--f-titulo);
+            font-weight: 700;
+        }
+
+        /* Secciones de SIG-POL-002 */
+        .seccion {
+            padding: 1.75rem 0;
+            border-top: 1px solid var(--linea);
+        }
+
+        .seccion:first-child {
+            border-top: 0;
+            padding-top: .5rem;
+        }
+
+        .seccion h3 {
+            font-family: var(--f-titulo);
+            font-weight: 700;
+            font-size: 1.08rem;
+            text-transform: uppercase;
+            margin: 0 0 1rem;
+            display: flex;
+            gap: .7rem;
+            align-items: baseline;
+        }
+
+        .seccion h3 .num {
+            flex: none;
+            font-size: .85rem;
+            color: #fff;
+            background: var(--marca);
+            min-width: 2rem;
+            padding: .1rem .45rem;
+            border-radius: 4px;
+            text-align: center;
+        }
+
+        .seccion h4 {
+            font-family: var(--f-titulo);
+            font-weight: 700;
+            font-size: .95rem;
+            text-transform: uppercase;
+            margin: 1.5rem 0 .6rem;
+            color: var(--acero);
+        }
+
+        .definiciones {
+            list-style: none;
+            padding: 0 !important;
+        }
+
+        .definiciones li {
+            padding: .8rem 0;
+            margin: 0;
+            border-bottom: 1px dashed var(--linea);
+        }
+
+        .definiciones li:last-child {
+            border-bottom: 0;
+        }
+
+        .definiciones b {
+            font-family: var(--f-titulo);
+            font-weight: 700;
+            font-size: .95rem;
+        }
+
+        .tarjetas {
+            list-style: none;
+            padding: 0 !important;
+            display: grid;
+            gap: .75rem;
+            margin: 0 0 1rem;
+        }
+
+        .tarjetas li {
+            margin: 0;
+            padding: 1rem 1.1rem;
+            border: 1px solid var(--linea);
+            border-left: 4px solid var(--marca);
+            border-radius: var(--radio);
+        }
+
+        .tarjetas b {
+            font-family: var(--f-titulo);
+            font-weight: 700;
+            font-size: .93rem;
+            color: var(--acero);
+        }
+
+        .tarjetas .fin {
+            display: block;
+            margin-top: .35rem;
+            color: var(--texto-2);
+        }
+
+        .derechos {
+            list-style: none;
+            padding: 0 !important;
+            counter-reset: der;
+            display: grid;
+            gap: .75rem;
+            margin: 0 0 1rem;
+        }
+
+        .derechos li {
+            counter-increment: der;
+            margin: 0;
+            padding: 1rem 1.1rem;
+            border: 1px solid var(--linea);
+            border-top: 4px solid var(--marca);
+            border-radius: var(--radio);
+        }
+
+        .derechos b {
+            font-family: var(--f-titulo);
+            font-weight: 700;
+            font-size: .93rem;
+        }
+
+        .derechos b::before {
+            content: counter(der) ". ";
+            color: var(--marca);
+        }
+
+        .derechos ul {
+            margin: .6rem 0 0;
+        }
+
+        .pasos {
+            counter-reset: paso;
+            list-style: none;
+            padding: 0 !important;
+        }
+
+        .pasos li {
+            counter-increment: paso;
+            position: relative;
+            padding-left: 2.6rem;
+            margin-bottom: .9rem;
+        }
+
+        .pasos li::before {
+            content: counter(paso);
+            position: absolute;
+            left: 0;
+            top: .05rem;
+            width: 1.85rem;
+            height: 1.85rem;
+            border-radius: 50%;
+            background: var(--acero);
+            color: #fff;
+            font-family: var(--f-titulo);
+            font-weight: 700;
+            font-size: .82rem;
+            display: grid;
+            place-items: center;
+        }
+
+        .plazos-conservacion {
+            list-style: lower-alpha;
+            padding-left: 1.6rem !important;
+        }
+
+        .plazos-conservacion li::marker {
+            font-family: var(--f-titulo);
+            font-weight: 700;
+            color: var(--marca);
+        }
+
+        .destacado {
+            border-left: 4px solid var(--marca);
+            background: var(--marca-suave);
+            padding: .9rem 1.1rem;
+            border-radius: 0 var(--radio) var(--radio) 0;
+        }
+
+        /* ===================== PIE (banda del PDF) ===================== */
+        .pie {
+            height: 34px;
+            background: linear-gradient(115deg, var(--marca) 0 32%, transparent 32% 34%, var(--gris) 34% 100%);
+        }
+
+        .arriba {
+            position: fixed;
+            right: 1.25rem;
+            bottom: calc(env(safe-area-inset-bottom, 0px) + 1.25rem);
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            border: 0;
+            cursor: pointer;
+            background: var(--marca);
+            color: #fff;
+            font-size: 1.2rem;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity .2s;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+        }
+
+        .arriba.visible {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        /* ===================== RESPONSIVE ===================== */
+        @media (min-width:760px) {
+
+            .tarjetas.dos,
+            .derechos {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .derechos li.ancho {
+                grid-column: 1 / -1;
+            }
+        }
+
+        @media (max-width:980px) {
+            .cuerpo {
+                grid-template-columns: 1fr;
+                gap: 1.25rem;
+            }
+
+            .indice {
+                position: static;
+                max-height: none;
+            }
+        }
+
+        @media (prefers-reduced-motion:reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            .arriba {
+                transition: none;
+            }
+        }
+
+        /* ===================== IMPRESIÓN ===================== */
+        @media print {
+            :root {
+                padding: 0;
+            }
+
+            body {
+                background: #fff;
+                font-size: 10.5pt;
+            }
+
+            .progreso,
+            .indice,
+            .arriba,
+            .saltar {
+                display: none !important;
+            }
+
+            .cuerpo {
+                display: block;
+                padding: 0;
+            }
+
+            .politica {
+                border: 0;
+                border-radius: 0;
+                break-before: page;
+            }
+
+            .politica:first-child {
+                break-before: auto;
+            }
+
+            .tarjetas li,
+            .derechos li {
+                break-inside: avoid;
+            }
+
+            a {
+                color: #000;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
+    <div class="progreso" id="progreso" aria-hidden="true"></div>
+
+    <header class="cabecera">
+        <div class="cabecera__int">
+            <a class="logo" href="/" aria-label="CORMEI, ir al inicio">
+                <span class="logo__nombre">CORMEI</span>
+                <span class="logo__lema">INGENIERÍA, FABRICACIÓN Y CONSTRUCCIÓN</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="cuerpo">
+        <nav class="indice" aria-label="Índice">
+            <details id="indiceDetalle" open>
+                <summary>Contenido</summary>
+                <ol>
+                    <li><a href="#sig-pol-001">Sistema Integrado de Gestión<small>SIG-POL-001</small></a></li>
+                    <li><a href="#ssm-pol-001">No Fumador<small>SSM-POL-001</small></a></li>
+                    <li><a href="#rhu-pol-001">Prevención y Sanción del Hostigamiento
+                            Sexual<small>RHU-POL-001</small></a></li>
+                    <li><a href="#sig-pol-002">Privacidad y Protección de Datos Personales<small>SIG-POL-002</small></a>
+                        <ol>
+                            <li><a href="#introduccion"><span>1</span>Introducción</a></li>
+                            <li><a href="#base-normativa"><span>2</span>Base normativa</a></li>
+                            <li><a href="#titular"><span>3</span>Identificación y domicilio del titular de los bancos de
+                                    datos</a></li>
+                            <li><a href="#definiciones"><span>4</span>Definiciones</a></li>
+                            <li><a href="#canales"><span>5</span>Canales de recopilación</a></li>
+                            <li><a href="#tipos-datos"><span>6</span>Tipos de datos a recopilar</a></li>
+                            <li><a href="#finalidades"><span>7</span>Finalidades del tratamiento</a></li>
+                            <li><a href="#obligatorios"><span>8</span>Datos personales obligatorios</a></li>
+                            <li><a href="#transferencias"><span>9</span>Transferencia de datos personales a terceros y
+                                    flujo transfronterizo</a></li>
+                            <li><a href="#derechos"><span>10</span>Derechos del titular de datos personales</a></li>
+                            <li><a href="#bancos"><span>11</span>Identificación de los bancos de datos personales</a>
+                            </li>
+                            <li><a href="#conservacion"><span>12</span>Tiempo de conservación de los datos
+                                    personales</a></li>
+                            <li><a href="#seguridad"><span>13</span>Seguridad y confidencialidad</a></li>
+                            <li><a href="#ejercicio"><span>14</span>Ejercicio de los derechos</a></li>
+                            <li><a href="#prevencion"><span>15</span>Encargado de prevención</a></li>
+                            <li><a href="#cambios"><span>16</span>Cambios en la política de privacidad</a></li>
+                        </ol>
+                    </li>
+                </ol>
+            </details>
+        </nav>
+
+        <main id="contenido" class="contenido" tabindex="-1">
+            <h1 class="sr-only">Políticas de CORMEI Contratistas Generales S.A.C.</h1>
+
+            <!-- ===================== SIG-POL-001 ===================== -->
+            <article class="politica" id="sig-pol-001" aria-labelledby="t-sig001">
+                <header class="politica__cabecera">
+                    <p class="politica__kicker">Política del</p>
+                    <h2 class="politica__titulo" id="t-sig001">SISTEMA INTEGRADO DE GESTION</h2>
+                    <p class="politica__codigo">Código: SIG-POL-001, Versión: 05, Fecha: 01 de junio del 2024</p>
+                </header>
+                <div class="politica__cuerpo">
+                    <p class="politica__subtitulo">Calidad, Seguridad y Salud en el Trabajo, Medio Ambiente, Antisoborno
+                    </p>
+                    <p>CORMEI Contratistas Generales S.A.C., es una empresa dedicada a realizar proyectos integrales en
+                        el mercado nacional e internacional de Diseño, Ingeniería, Fabricación, Mantenimiento y Montaje
+                        Metalmecánico de Equipos y Estructuras para Plantas industriales. Tiene como principal objetivo
+                        alcanzar un alto desempeño en la Gestión de Calidad, Medio Ambiente, Seguridad y Salud en el
+                        Trabajo; para lo cual asume los siguientes compromisos:</p>
+                    <ol class="compromisos">
+                        <li>Satisfacer a los clientes, entregando un producto, bien o servicio de calidad, cumpliendo
+                            las especificaciones técnicas establecidas y en el tiempo acordado.</li>
+                        <li>Proteger la seguridad y la salud de todos los trabajadores; mediante la eliminación de
+                            peligros y reducción de los riesgos, proporcionando condiciones de trabajo seguras y
+                            saludables para prevenir lesiones, deterioro de la salud, dolencias, enfermedades e
+                            incidentes en el trabajo.</li>
+                        <li>Prevenir, minimizar y controlar la contaminación ambiental, promoviendo la gestión adecuada
+                            de los residuos y el uso sostenible de los recursos naturales para la protección del medio
+                            ambiente.</li>
+                        <li>Fomentar continuamente la participación y consulta de los trabajadores y representantes, en
+                            la adopción de todos los elementos del Sistema Integrado de Gestión.</li>
+                        <li>Cumplir con la legislación y estándares nacionales vigentes y otros adoptados de forma
+                            voluntaria, aplicables a la Calidad, Antisoborno, Medio Ambiente, Seguridad y Salud en el
+                            Trabajo.</li>
+                        <li>Prohibir cualquier intento o acto de corrupción en todos los niveles de la organización y
+                            fomentar la ética y transparencia entre los empleados con el fin de prevenir y combatir
+                            actividades ilícitas relacionadas con el soborno.</li>
+                        <li>Implementar medidas y controles para prevenir, detectar, investigar y sancionar posibles
+                            casos de corrupción, asegurando la confidencialidad de las denuncias y preocupaciones
+                            presentadas de manera honesta o basadas en creencias razonables, sin miedo a represalias, y
+                            garantizando la autoridad e independencia de la función de cumplimiento anticorrupción.</li>
+                        <li>Mejorar continuamente el Sistema Integrado de Gestión, controlando de forma permanente la
+                            gestión de cumplimiento de cada uno de los procesos.</li>
+                    </ol>
+                </div>
+            </article>
+
+            <!-- ===================== SSM-POL-001 ===================== -->
+            <article class="politica" id="ssm-pol-001" aria-labelledby="t-ssm001">
+                <header class="politica__cabecera">
+                    <p class="politica__kicker">Política de</p>
+                    <h2 class="politica__titulo" id="t-ssm001">NO FUMADOR</h2>
+                    <p class="politica__codigo">Código: SSM-POL-001, Versión: 00, Fecha: 30 de Enero 2025</p>
+                </header>
+                <div class="politica__cuerpo">
+                    <p>CORMEI S.A.C., otorga el mayor valor a la salud, seguridad y medio ambiente; por lo cual, es
+                        importante proporcionar un entorno de trabajo seguro y saludable para todos sus empleados,
+                        visitantes y contratistas. Por tales motivos, se considera necesario tomar medidas con respecto
+                        al tabaquismo.</p>
+                    <p>En consecuencia, CORMEI S.A.C. ha adoptado una política de no fumador con la finalidad de
+                        promover la salud, así como proteger a los no fumadores de la exposición al humo de tabaco que
+                        origine otra persona.</p>
+                    <p>Para cumplir con este propósito, se ha establecido lo siguiente:</p>
+                    <ul>
+                        <li>Prohibición de fumar durante el horario laboral, al interior de las instalaciones y
+                            vehículos propios de la empresa.</li>
+                        <li>Gestionar actividades de sensibilización y de capacitación que busquen la creación de
+                            hábitos y estilos de vida saludables en relación con el daño que causa el fumar en la salud
+                            de la persona y su entorno.</li>
+                    </ul>
+                    <p>Todos los empleados, contratistas y visitantes deben cumplir esta política cuando visiten o
+                        realicen actividades dentro de las instalaciones operativas, administrativas, áreas circundantes
+                        y de clientes de CORMEI S.A.C. Esta política incluye cigarrillos tradicionales y/o cigarrillos
+                        electrónicos.</p>
+                </div>
+            </article>
+
+            <!-- ===================== RHU-POL-001 ===================== -->
+            <article class="politica" id="rhu-pol-001" aria-labelledby="t-rhu001">
+                <header class="politica__cabecera">
+                    <p class="politica__kicker">Política de</p>
+                    <h2 class="politica__titulo" id="t-rhu001">POLÍTICA DE PREVENCIÓN Y SANCIÓN DEL HOSTIGAMIENTO SEXUAL
+                    </h2>
+                    <p class="politica__codigo">Código: RHU-POL-001, Versión: 00, Fecha: 03 de junio del 2024</p>
+                </header>
+                <div class="politica__cuerpo">
+                    <p class="politica__subtitulo">Prevención y Sanción de Hostigamiento Laboral</p>
+                    <p>En CORMEI CONTRATISTAS GENERALES S.A.C. estamos comprometidos con considerar los valores humanos,
+                        éticos y morales como base de una sana y sólida interrelación laboral; como tal es nuestra
+                        responsabilidad el mantener condiciones de respeto y armonía entre los colaboradores, conforme a
+                        los principios y valores que prevalecen en la organización y la comunidad, por tal motivo nos
+                        comprometemos a lo siguiente:</p>
+                    <ol class="compromisos">
+                        <li>Prevenir y sancionar el hostigamiento sexual producido en las relaciones de autoridad o
+                            dependencia, cualquiera sea la forma jurídica de esta relación. Asimismo, cuando se presente
+                            entre personas de prescindencia de jerarquía, estamento, grado, cargo, función, nivel
+                            remunerativo o análogo; para ello ha fijado como objetivos brindar los canales necesarios
+                            para la presentación de quejas o denuncias, y detallar el procedimiento de investigación y
+                            sanción.</li>
+                        <li>No permitir actos de hostigamiento sexual u ambiental en CORMEI, caso contrario será
+                            sancionado según la gravedad y de acuerdo a la Ley 27942, Ley de Prevención y Sanción del
+                            Hostigamiento Sexual y su reglamento aprobado por el Decreto Supremo Nº 014-2019-MIMP. Para
+                            tal efecto, con la finalidad de prevenir este tipo de conductas, CORMEI. promoverá
+                            capacitaciones sobre normas, procedimientos y políticas contra el hostigamiento sexual.</li>
+                    </ol>
+                </div>
+            </article>
+
+            <!-- ===================== SIG-POL-002 ===================== -->
+            <article class="politica" id="sig-pol-002" aria-labelledby="t-sig002">
+                <header class="politica__cabecera">
+                    <p class="politica__kicker">Política de</p>
+                    <h2 class="politica__titulo" id="t-sig002">PRIVACIDAD Y PROTECCIÓN DE DATOS PERSONALES</h2>
+                    <p class="politica__codigo">SIG-POL-002 POLÍTICA DE PRIVACIDAD Y PROTECCIÓN DE DATOS
+                        PERSONALES,<br>Fecha: 03 de junio del 2024</p>
+                </header>
+                <div class="politica__cuerpo">
+
+                    <section class="seccion" id="introduccion">
+                        <h3><span class="num">1</span>Introducción</h3>
+                        <p>En CORMEI CONTRATISTAS GENERALES S.A.C. (en adelante,“CORMEI S.A.C”), identificada con R.U.C.
+                            No. 20102279256, estamos comprometidos con mantener la privacidad y la protección de datos
+                            de nuestros prospectos de clientes, visitas, proveedores y colaboradores de conformidad con
+                            lo establecido en la Ley No. 29733, Ley de Protección de datos personales, su Reglamento y
+                            normas complementarias vigentes, adoptando para ello las medidas legales, técnicas y
+                            organizativas necesarias para evitar la pérdida, mal uso, alteración, acceso no autorizado
+                            y/o sustracción de los datos personales facilitados por sus titulares. Asimismo, CORMEI
+                            S.A.C garantiza la mejora continua de estas medidas.</p>
+                        <ul>
+                            <li>La existencia del tratamiento de datos de carácter personal, la finalidad de la
+                                recolección y destinatarios de la información.</li>
+                            <li>Carácter obligatorio o facultativo de la respuesta a las preguntas que en su caso les
+                                sean planteadas, así como de las consecuencias de la obtención de los datos personales o
+                                la negativa a suministrarlos.</li>
+                            <li>Posibilidad de ejercer sus derechos de acceso a la información, cancelación,
+                                actualización, inclusión, rectificación y supresión, a impedir el suministro, oposición
+                                y al tratamiento objetivo de datos personales. (Derechos ARCO)</li>
+                            <li>Identidad y dirección del responsable del tratamiento de los datos personales.</li>
+                        </ul>
+                    </section>
+
+                    <section class="seccion" id="base-normativa">
+                        <h3><span class="num">2</span>Base normativa</h3>
+                        <p>La presente Política se sustenta en las siguientes normas:</p>
+                        <ul>
+                            <li>Constitución Política del Perú, artículo 2, numeral 6 (derecho a la autodeterminación
+                                informativa).</li>
+                            <li>Ley N.° 29733, Ley de Protección de Datos Personales.</li>
+                            <li>Decreto Supremo N.° 016-2024-JUS, que aprueba el Reglamento de la Ley N.° 29733.</li>
+                            <li>Directiva N.° 01-2020-JUS/DGTAIPD, Directiva que regula el tratamiento de datos
+                                personales mediante sistemas de videovigilancia.</li>
+                            <li>Decreto Legislativo N.° 1310, medidas de simplificación administrativa (conservación de
+                                datos de colaboradores).</li>
+                        </ul>
+                    </section>
+
+                    <section class="seccion" id="titular">
+                        <h3><span class="num">3</span>Identificación y domicilio del titular de los bancos de datos</h3>
+                        <p>CORMEI CONTRATISTAS GENERALES S.A.C., identificada con R.U.C. No. 20102279256 y con domicilio
+                            en Av. Los Faisanes Nro. 284, Urb. La Campiña, Distrito de Chorrillos, Provincia y
+                            Departamento de Lima, es una empresa privada que brinda servicios de fabricación de
+                            productos metálicos para uso estructural en el Perú.</p>
+                    </section>
+
+                    <section class="seccion" id="definiciones">
+                        <h3><span class="num">4</span>Definiciones</h3>
+                        <ul class="definiciones">
+                            <li><b>Banco de datos personales:</b> Es el conjunto de datos de personas naturales
+                                computarizado o no, y estructurado conforme a criterios específicos, que permita acceder
+                                sin esfuerzos desproporcionados a los datos personales, ya sea aquél centralizado,
+                                descentralizado o repartido de forma funcional o geográfica.</li>
+                            <li><b>Bloqueo:</b> Es la medida que consiste en la identificación y reserva de los datos
+                                personales adoptando medidas técnicas y organizativas para impedir su tratamiento,
+                                incluyendo su visualización, durante el periodo en que se esté procesando alguna
+                                solicitud de actualización, inclusión, rectificación o supresión. Se dispone también
+                                como paso previo a la cancelación por el tiempo necesario para determinar posibles
+                                responsabilidades en relación a los tratamientos durante el plazo de prescripción legal
+                                o prevista contractualmente.</li>
+                            <li><b>Cancelación:</b> Es la acción o medida que en la Ley se describe como supresión,
+                                cuando se refiere a datos personales, que consiste en eliminar o suprimir los datos
+                                personales.</li>
+                            <li><b>Datos personales:</b> Es aquella información numérica, alfabética, gráfica,
+                                fotográfica, acústica, sobre hábitos personales, de localización, identificadores en
+                                línea o de cualquier otro tipo concerniente a aspectos físicos, económicos, culturales o
+                                sociales de las personas naturales que las identifica o las hace identificables. Se
+                                considera identificable cuando se puede verificar la identidad de la persona de manera
+                                directa o indirectamente a partir de la combinación de datos a través de medios que
+                                puedan ser razonablemente utilizados.</li>
+                            <li><b>Datos sensibles:</b> Es aquella información relativa a datos genéticos o biométricos
+                                de la persona natural, datos neuronales, datos morales o emocionales, hechos o
+                                circunstancias de su vida afectiva o familiar, los hábitos personales que corresponden a
+                                la esfera más íntima, la información relativa a la afiliación sindical, salud física o
+                                mental u otras análogas que afecten su intimidad.</li>
+                            <li><b>Derechos:</b> Derechos de Acceso, actualización, inclusión, rectificación y
+                                supresión, a impedir el suministro, oposición y al tratamiento objetivo que la Ley N.°
+                                29733 reconoce a los titulares de datos personales</li>
+                            <li><b>Encargado de prevención:</b> persona designada por el máximo órgano de gobierno para
+                                ejercer, con autonomía, la operación, monitoreo del tratamiento de datos personales y la
+                                mejora continua del tratamiento de este.</li>
+                            <li><b>Rectificación:</b> Es aquella acción destinada a afectar o modificar un dato personal
+                                ya sea para actualizarlo o corregirlo con datos exactos.</li>
+                        </ul>
+                    </section>
+
+                    <section class="seccion" id="canales">
+                        <h3><span class="num">5</span>Canales de recopilación</h3>
+                        <p>CORMEI S.A.C. utiliza diferentes canales para recopilar datos personales, ya sea al
+                            solicitarlos directamente o recolectándolos de otras fuentes lícitas . A continuación,
+                            algunos ejemplos de cómo lo hacemos:</p>
+                        <ul>
+                            <li>Cuando, como cliente, interactúas con nuestros canales digitales (página web, redes
+                                sociales, u otros sistemas digitales que CORMEI S.A.C. implemente), WhatsApp, correo
+                                electrónico, entre otros.</li>
+                            <li>Cuando tomas contacto con nuestros canales corporativos.</li>
+                            <li>Si eres socio, administrador, abogado o representante legal de una empresa que es
+                                cliente o mantiene cualquier otra relación con CORMEI S.A.C.</li>
+                            <li>Cuando accedemos a tus datos a través de fuentes públicas o privadas y lícitas.</li>
+                            <li>Cuando hacemos uso del chatbot automatizado integrado a WhatsApp (Melissa), diseñado
+                                para la recepción de solicitudes de empleo, recolección y filtrado de currículums (CVs)
+                                mediante tecnologías de Inteligencia Artificial.</li>
+                        </ul>
+                    </section>
+
+                    <section class="seccion" id="tipos-datos">
+                        <h3><span class="num">6</span>Tipos de datos a recopilar</h3>
+                        <p>En CORMEI S.A.C. es necesario que nos proporciones cierta información personal:</p>
+                        <ul class="tarjetas">
+                            <li><b>Datos identificativos y de contacto:</b> Nombres, apellidos, tipo y número de
+                                documento de identidad, dirección de domicilio, teléfono, correo electrónico, voz,
+                                imagen en fotografía (personal o del documento de identificación) o vídeo
+                                independientemente del soporte (videovigilancia), audios, firma manuscrita, digitalizada
+                                y/o electrónica.</li>
+                            <li><b>Datos de características personales:</b> Estado civil, fecha de nacimiento,
+                                nacionalidad, sexo, edad, profesión u ocupación u otros que se consideren indispensables
+                                para los fines que estos sean recolectados.</li>
+                            <li><b>Datos económicos, financieros y de seguros:</b> Ingresos económicos, historial
+                                crediticio, deudas e información crediticia en centrales de riesgo, datos bancarios,
+                                tarjetas de crédito, cuentas, información tributaria.</li>
+                            <li><b>Datos de carácter social:</b> Características de la vivienda.</li>
+                            <li><b>Datos sobre capacidad jurídica:</b> Datos sobre la facultad de obrar de una persona,
+                                establecida en sentencia judicial, nombramiento de tutores o representantes legales.
+                            </li>
+                            <li><b>Datos biométricos:</b> Se refiere a la minucia o patrón biométrico de tu huella
+                                dactilar y/o reconocimiento facial, representados mediante códigos numéricos ilegibles,
+                                y no como el dato biométrico en sí mismo. El tratamiento de estos datos comprende su
+                                recopilación, uso y almacenamiento, con el propósito de validar, confirmar y verificar
+                                tu identidad, así como registrar de manera válida e inequívoca tu aceptación y/o
+                                autorización a determinadas operaciones, asociándola directamente a tu identidad. Este
+                                tratamiento es esencial para la preparación, celebración y ejecución de la relación
+                                precontractual y, nos ayuda a prevenir riesgos de fraudes asociados a la suplantación de
+                                tu identidad. Recuerda que, si no proporcionas esta información, no podremos validar tu
+                                identidad ni procesar tus operaciones.</li>
+                            <li><b>Datos de navegación:</b> Si aceptas el uso de cookies y tecnologías similares en tus
+                                dispositivos de navegación, los datos obtenidos de tus navegaciones por nuestras páginas
+                                web o aplicaciones móviles y la navegación que realices en las mismas: historial de
+                                navegación (páginas visitadas y clics en contenidos), ID del dispositivo, ID de
+                                publicidad, dirección IP y versión instalada de la aplicación.</li>
+                            <li><b>Datos de geolocalización:</b> Información sobre tu ubicación, siempre y cuando
+                                autorices el acceso a esta información.</li>
+                        </ul>
+                        <p>En CORMEI S.A.C., confiamos en que la información que nos brindas es veraz, exacta, completa,
+                            vigente y auténtica. Te recordamos que es tu obligación mantenerla actualizada, aunque
+                            nosotros también podremos actualizarla, validarla o complementar a partir de fuentes
+                            legítimas públicas, en cumplimiento del principio de calidad establecido en la Ley.</p>
+                    </section>
+
+                    <section class="seccion" id="finalidades">
+                        <h3><span class="num">7</span>Finalidades del tratamiento</h3>
+                        <p>Los datos personales de los cuales se realiza el tratamiento tienen las siguientes
+                            finalidades:</p>
+                        <ul class="tarjetas">
+                            <li><b>Respecto del Banco de Datos denominado “Clientes”:</b> Contar con un registro de
+                                información de todos los clientes. Esta base de datos es utilizada para cumplir con las
+                                actividades antes, durante e incluso una vez culminada la relación contractual.
+                                Asimismo, esta información se utilizará, previa autorización expresa de tu parte, para
+                                el envío de información y/o documentación.</li>
+                            <li><b>Respecto del Banco de Datos denominado “Proveedores”:</b> Mantener un control de la
+                                información de nuestros proveedores, creamos files de información de cada uno. Estos
+                                files se actualizan periódicamente y forman parte de nuestra evaluación al momento de
+                                decidir la compra de bienes o adquisición de servicios.</li>
+                            <li><b>Respecto del Banco de Datos denominado “Colaboradores”:</b> Tener una base de datos
+                                actualizada del personal de la empresa.</li>
+                            <li><b>Respecto del Banco de Datos denominado “Postulantes”:</b> Tratamiento automatizado y
+                                la evaluación mediante herramientas de Inteligencia Artificial de los datos y documentos
+                                adjuntos (CV), con la finalidad de perfilamiento del candidato, filtrado inicial y
+                                adecuación al perfil del puesto. Para luego registrar y gestionar los datos personales
+                                de los candidatos a colaboradores, los mismos que serán utilizados durante el proceso de
+                                selección, contratación y en futuras convocatorias de personal.</li>
+                            <li><b>Respecto del Banco de Datos denominado “Videovigilancia – Instalaciones Internas y
+                                    Externas”:</b> Contar con el registro de imágenes para el control de medidas de
+                                seguridad de las instalaciones internas y externas de CORMEI S.A.C.</li>
+                        </ul>
+                    </section>
+
+                    <section class="seccion" id="obligatorios">
+                        <h3><span class="num">8</span>Datos personales obligatorios</h3>
+                        <p>Para llevar a cabo las finalidades descritas en la presente política de privacidad, es
+                            obligatorio nos proporcione, cuanto menos, los siguientes datos personales: nombre y
+                            apellidos, número y tipo del documento de identidad, huella digital (en los casos que
+                            corresponda), imagen (en los casos que corresponda, domicilio (en los casos que
+                            corresponda), dirección de correo electrónico (en los casos que corresponda) y número
+                            telefónico (en los casos que corresponda).</p>
+                        <ul>
+                            <li>Consecuencias de proporcionar datos personales y de la negativa a hacerlo.</li>
+                        </ul>
+                        <p class="destacado">En caso no nos permitas acceder, cuanto menos, a los datos descritos en el
+                            acápite anterior, será imposible generar una relación comercial contigo y/o cumplir con
+                            nuestras obligaciones pre y post contractuales.</p>
+                    </section>
+
+                    <section class="seccion" id="transferencias">
+                        <h3><span class="num">9</span>Transferencia de datos personales a terceros y flujo
+                            transfronterizo</h3>
+                        <p>CORMEI S.A.C podrá transferir, suministrar, difundir o manifestar por cualquier medio, de
+                            carácter nacional sus datos personales, con los siguientes tipos de empresas, y para las
+                            finalidades que a continuación detallamos:</p>
+                        <ul class="tarjetas">
+                            <li><b>Entidades financieras y bancarias acreditadas por la SBS</b><span
+                                    class="fin">Finalidad: Procesamiento de los pagos por la prestación de nuestros
+                                    servicios y/o la comercialización de nuestros productos.</span></li>
+                            <li><b>Personas Jurídicas de derecho privado</b><span class="fin">Finalidad: Cumplimiento de
+                                    obligaciones contractuales con nuestros clientes.</span></li>
+                            <li><b>Administración Pública (MTPE, SUNAT, PNP, etc.)</b><span class="fin">Finalidad:
+                                    Cumplimiento de lo establecido en la normativa vigente en el ámbito de sus
+                                    competencias.</span></li>
+                        </ul>
+
+                        <h4>Transferencia internacional y flujo transfronterizo de datos</h4>
+                        <p>Para la gestión de reclutamiento, selección y recolección automatizada de currículums (CVs)
+                            mediante aplicaciones conversacionales e Inteligencia Artificial, CORMEI S.A.C. realiza
+                            flujo transfronterizo de datos personales con los siguientes terceros en calidad de
+                            encargados de tratamiento:</p>
+                        <ul class="tarjetas dos">
+                            <li><b>GitHub, Inc. (Estados Unidos):</b> Plataforma de alojamiento del repositorio de
+                                código fuente del sistema.<span class="fin">Finalidad: Almacenamiento de la lógica de
+                                    programación y algoritmos empleados para el tratamiento de datos personales. Se
+                                    precisa que en esta infraestructura no se almacenan ni registran los datos
+                                    personales ni expedientes de los postulantes.</span></li>
+                            <li><b>Meta Platforms, Inc. (WhatsApp Inc.):</b> Proveedor de la plataforma WhatsApp Cloud
+                                API.<span class="fin"><b>Finalidad:</b> Recepción, transmisión y gestión de chats y
+                                    documentación adjunta por el candidato.</span></li>
+                            <li><b>Anthropic, PBC (Estados Unidos):</b> Proveedor del modelo de Inteligencia Artificial
+                                (Claude API).<span class="fin"><b>Finalidad:</b> Lectura, extracción de información de
+                                    CVs, clasificación de perfiles y auditoría del proceso conversacional.</span></li>
+                            <li><b>Google LLC (Estados Unidos):</b> Proveedor de servicios en la nube (Google Drive /
+                                Google Workspace).<span class="fin"><b>Finalidad:</b> Almacenamiento seguro de
+                                    expedientes digitales en PDF y hojas de seguimiento para Gestión Humana.</span></li>
+                            <li><b>Railway Corporation (Estados Unidos):</b> Proveedor de infraestructura en la nube y
+                                servidor de base de datos.<span class="fin"><b>Finalidad:</b> Alojamiento de la
+                                    aplicación y persistencia del estado de las conversaciones.</span></li>
+                        </ul>
+                        <p>CORMEI S.A.C. garantiza que dichos proveedores mantienen estándares adecuados de seguridad
+                            conforme a la Ley N.° 29733 y su Reglamento.</p>
+                        <p>Cuando sea adecuado, antes de revelar o transferir datos personales a un tercero, CORMEI
+                            S.A.C le exigirá legal y/o contractualmente a éste que adopte las precauciones necesarias
+                            para proteger los datos contra su uso o revelación no autorizados, garantizando niveles
+                            adecuados de protección conforme a la Ley N.° 29733 y su Reglamento. Asimismo, CORMEI S.A.C
+                            exigirá legalmente que se respeten las condiciones en las que el titular consintió el
+                            tratamiento de sus datos personales.</p>
+                    </section>
+
+                    <section class="seccion" id="derechos">
+                        <h3><span class="num">10</span>Derechos del titular de datos personales</h3>
+                        <p>Son un conjunto de derechos que velan por la protección de los datos personales,
+                            permitiéndote controlar tu información personal. Para ello, la Ley N° 29733, Ley de
+                            Protección de Datos Personales (LPDT) prevé derechos que te permiten exigir que tus datos
+                            personales sean tratados adecuadamente.</p>
+                        <p>Con los derechos podrás generar solicitudes respecto a tus siguientes derechos:</p>
+                        <ol class="derechos">
+                            <li><b>Derecho de acceso:</b> Toda persona tiene derecho a obtener la información que sobre
+                                sí mismo sea objeto de tratamiento en cualquier banco de datos, la forma en que sus
+                                datos fueron recopilados, las razones que motivaron su recopilación y a solicitud de
+                                quién se realizó la recopilación, así como las transferencias realizadas o qué se prevé
+                                hacer de ellos.</li>
+                            <li><b>Derecho de actualización, inclusión, rectificación y supresión:</b> Es el derecho que
+                                tiene todo titular de datos personales, el cual le permite la actualización, inclusión,
+                                rectificación y supresión de sus datos personales materia de tratamiento, cuando estos
+                                sean parcial o totalmente inexactos, incompletos, cuando se hubiere advertido omisión,
+                                error o falsedad,</li>
+                            <li><b>Derecho de impedir el suministro:</b> 1.El titular de los datos personales podrá
+                                impedir que estos sean suministrados, especialmente cuando ello afecte sus derechos
+                                fundamentales. El derecho a impedir el suministro no aplica para la relación entre el
+                                titular del banco de datos personales y el encargado de tratamiento de datos personales
+                                para los efectos del tratamiento de estos.</li>
+                            <li><b>Derecho de oposición:</b> Toda persona cuando no hubiera prestado consentimiento, el
+                                titular de datos personales puede oponerse a su tratamiento cuando existan motivos
+                                fundados y legítimos relativos a una concreta situación personal. En caso de oposición
+                                justificada, el titular o el encargado de tratamiento de datos personales, según
+                                corresponda, debe proceder a su supresión.</li>
+                            <li class="ancho"><b>Protección de datos sensibles en postulaciones:</b> CORMEI S.A.C. no
+                                almacena ni trata información relativa a antecedentes de salud o documentos médicos
+                                presentados de forma espontánea por los candidatos durante la interacción en WhatsApp.
+                                En caso de detectarse dichos documentos, el sistema procederá a su rechazo y eliminación
+                                automática en cumplimiento de la Ley N.° 29733.</li>
+                            <li class="ancho"><b>Derecho de impugnar y solicitar valoración humana ante valoraciones
+                                    automatizadas:</b> El titular de datos personales tiene derecho a no ser objeto de
+                                una decisión basada únicamente en el tratamiento automatizado de sus datos personales,
+                                incluida la elaboración de perfiles mediante herramientas de Inteligencia Artificial o
+                                algoritmos, que produzca efectos jurídicos sobre él o le afecte significativamente (como
+                                la descalificación o filtrado automático de un proceso de selección). En estos casos, el
+                                titular tiene derecho a:
+                                <ul>
+                                    <li>Impugnar la decisión adoptada por el sistema automatizado.</li>
+                                    <li>Solicitar la intervención o revisión humana directa por parte del equipo de
+                                        Gestión Humana de CORMEI S.A.C. para que reevalúe su solicitud de empleo de
+                                        manera personalizada.</li>
+                                </ul>
+                            </li>
+                            <li class="ancho"><b>Derecho de información y transparencia:</b> El titular de datos
+                                personales tiene derecho a solicitar información clara sobre los criterios o lógica
+                                aplicados por el sistema al analizar su CV.</li>
+                        </ol>
+
+                        <h4>Procedimiento</h4>
+                        <p>Envíanos un correo electrónico a la siguiente dirección: <a
+                                href="mailto:contacto@cormei.com">contacto@cormei.com</a> adjuntado los siguientes
+                            documentos:</p>
+                        <ol class="pasos">
+                            <li>Solicitud de derechos, debidamente completada y firmada. El formato lo podrás solicitar
+                                al correo: <a href="mailto:contacto@cormei.com">contacto@cormei.com</a>.</li>
+                            <li>Copia simple y legible de tu Documento Nacional de Identidad.</li>
+                            <li>Copia simple y legible de Vigencia de Poder Especial no mayor de 3 meses, en el caso de
+                                representación.</li>
+                            <li>Otros, en caso consideres necesario agregar mayor información.</li>
+                        </ol>
+
+                        <h4>Plazo de atención</h4>
+                        <p class="destacado">El tiempo de respuesta para las solicitudes de derecho de Rectificación,
+                            Cancelación, Oposición y Tratamiento es de <strong>10 días hábiles</strong>. Por su parte,
+                            la solicitud de Acceso tiene un plazo de respuesta de <strong>20 días hábiles</strong>.</p>
+                    </section>
+
+                    <section class="seccion" id="bancos">
+                        <h3><span class="num">11</span>Identificación de los bancos de datos personales</h3>
+                        <p>Los datos personales que se proporcionen, serán almacenados en los siguientes Bancos de Datos
+                        </p>
+                        <ul>
+                            <li>Bancos de Datos Personales de Clientes.</li>
+                            <li>Bancos de Datos Personales de Videovigilancia – Instalaciones Internas y Externas.</li>
+                            <li>Banco de Datos Personales de Postulantes.</li>
+                            <li>Bancos de Datos Personales de Proveedores.</li>
+                            <li>Bancos de Datos Personales de Colaboradores.</li>
+                        </ul>
+                    </section>
+
+                    <section class="seccion" id="conservacion">
+                        <h3><span class="num">12</span>Tiempo de conservación de los datos personales</h3>
+                        <p>Los datos personales serán conservados durante los siguientes plazos:</p>
+                        <ol class="plazos-conservacion">
+                            <li><b>Datos de clientes:</b> hasta 10 (diez) años posteriores al cumplimiento de las
+                                finalidades descritas.</li>
+                            <li><b>Imágenes de videovigilancia:</b> entre 30 días y un máximo de 60 días, conforme a la
+                                Directiva de Videovigilancia N.° 01-2020-JUS/DGTAIPD.</li>
+                            <li><b>Datos de colaboradores:</b> cinco (5) años después de extinta la relación laboral,
+                                conforme al artículo 3 del Decreto Legislativo N.° 1310; o hasta que venza el plazo de
+                                prescripción para que el trabajador reclame sus beneficios laborales, aportes de AFP o
+                                sanciones disciplinarias impuestas.</li>
+                            <li><b>Datos de proveedores:</b> mientras dure la relación contractual.</li>
+                            <li><b>Datos de postulantes:</b> dos (2) años contados desde la fecha de la postulación,
+                                salvo que el postulante sea contratado, en cuyo caso se aplica el plazo previsto para
+                                colaboradores.</li>
+                        </ol>
+                        <p>Vencidos estos plazos, los datos serán eliminados o anonimizados de manera segura, salvo que
+                            una disposición legal exija su conservación por un periodo mayor.</p>
+                        <p>Los datos personales de los proveedores serán almacenados mientras dure la relación
+                            contractual.</p>
+                    </section>
+
+                    <section class="seccion" id="seguridad">
+                        <h3><span class="num">13</span>Seguridad y confidencialidad</h3>
+                        <p>CORMEI S.A.C cuenta con todas las medidas técnicas, legales y organizacionales necesarias
+                            para garantizar la seguridad y confidencialidad de sus datos personales. Sus datos
+                            personales serán tratados considerando los principios de legalidad, consentimiento,
+                            proporcionalidad, calidad, seguridad y los demás presentes en la normativa vigente referente
+                            a Protección de Datos Personales, evitando que estos sean filtrados, difundidos o se incurra
+                            en cualquier acción que ponga en peligro su información personal.</p>
+                    </section>
+
+                    <section class="seccion" id="ejercicio">
+                        <h3><span class="num">14</span>Ejercicio de los derechos</h3>
+                        <p>CORMEI S.A.C. tiene como propósito que se brinde el mejor tratamiento de los datos
+                            personales, por tanto, se informa que toda persona natural o jurídica que otorgue sus datos
+                            personales a CORMEI S.A.C. tiene el derecho de ejercer sus derechos de acceso,
+                            rectificación, cancelación y oposición (Derechos ARCO), así como a impugnar valoraciones
+                            automatizadas y solicitar una revisión humana conforme al procedimiento indicado en el punto
+                            10 de la presente política.</p>
+                        <p>Para ejercer cualquiera de estos derechos (Derechos Arco) y de revisión humana, el titular
+                            deberá seguir el procedimiento detallado en la Sección 10 (Procedimiento) de la presente
+                            Política, enviando su solicitud al correo electrónico: <a
+                                href="mailto:contacto@cormei.com?subject=Ejercicio%20de%20Derechos%20ARCO%20-%20Postulante">contacto@cormei.com</a>,
+                            , indicando en el asunto "Ejercicio de Derechos ARCO - Postulante".</p>
+                    </section>
+
+                    <section class="seccion" id="prevencion">
+                        <h3><span class="num">15</span>Encargado de prevención</h3>
+                        <p>En cumplimiento de lo dispuesto en la normativa vigente, el encargado de prevención será la
+                            persona que atenderá el buzón de quejas y reclamos. En razón a ello, podrá ponerse en
+                            contacto con nuestro buzón de quejas y reclamos a través del siguiente correo electrónico:
+                            <a href="mailto:contacto@cormei.com">contacto@cormei.com</a></p>
+                        <p class="destacado">Este buzón no está habilitado para recibir solicitudes relacionadas con el
+                            ejercicio de derechos, procedimiento que deberá ejecutarse de acuerdo con lo dispuesto en el
+                            numeral 10 de la presente política.</p>
+                    </section>
+
+                    <section class="seccion" id="cambios">
+                        <h3><span class="num">16</span>Cambios en la política de privacidad</h3>
+                        <p>CORMEI S.A.C se reserva el derecho de modificar y/o actualizar la presente Política de
+                            Privacidad como parte de su mejora continua, ya sea para adaptarla a futuros cambios
+                            normativos, brindar una mejor calidad de servicio o comunicar nuevas alternativas
+                            relacionadas a la presente Política.</p>
+                    </section>
+
+                </div>
+            </article>
+        </main>
+    </div>
+
+    <footer class="pie" aria-hidden="true"></footer>
+
+    <button class="arriba" id="btnArriba" type="button" aria-label="Volver al inicio de la página">↑</button>
+
+    <script>
+        (function () {
+            "use strict";
+
+            // Índice plegado en móvil
+            var indice = document.getElementById("indiceDetalle");
+            var mqMovil = window.matchMedia("(max-width: 980px)");
+            function ajustarIndice() { indice.open = !mqMovil.matches; }
+            ajustarIndice();
+            if (mqMovil.addEventListener) mqMovil.addEventListener("change", ajustarIndice);
+            indice.addEventListener("click", function (e) {
+                if (e.target.closest("a") && mqMovil.matches) indice.open = false;
+            });
+
+            // Resaltado del apartado activo en el índice
+            var enlaces = document.querySelectorAll(".indice a");
+            var mapa = {};
+            enlaces.forEach(function (a) { mapa[a.getAttribute("href").slice(1)] = a; });
+            if ("IntersectionObserver" in window) {
+                var observador = new IntersectionObserver(function (entradas) {
+                    entradas.forEach(function (en) {
+                        if (en.isIntersecting && mapa[en.target.id]) {
+                            enlaces.forEach(function (a) { a.removeAttribute("aria-current"); });
+                            mapa[en.target.id].setAttribute("aria-current", "true");
+                        }
+                    });
+                }, { rootMargin: "-15% 0px -75% 0px" });
+                document.querySelectorAll("#sig-pol-001, #ssm-pol-001, #rhu-pol-001, #sig-pol-002 .politica__cabecera, .seccion")
+                    .forEach(function (el) {
+                        // la cabecera de SIG-POL-002 activa el enlace de la política
+                        if (el.classList.contains("politica__cabecera")) el.id = el.id || "sig-pol-002-cab";
+                        observador.observe(el);
+                    });
+                mapa["sig-pol-002-cab"] = mapa["sig-pol-002"];
+            }
+
+            // Barra de progreso y botón volver arriba
+            var barra = document.getElementById("progreso");
+            var btnArriba = document.getElementById("btnArriba");
+            var enCola = false;
+            function alDesplazar() {
+                var h = document.documentElement;
+                var total = h.scrollHeight - h.clientHeight;
+                barra.style.width = (total > 0 ? (h.scrollTop / total) * 100 : 0) + "%";
+                btnArriba.classList.toggle("visible", h.scrollTop > 600);
+                enCola = false;
+            }
+            window.addEventListener("scroll", function () {
+                if (!enCola) { enCola = true; requestAnimationFrame(alDesplazar); }
+            }, { passive: true });
+            alDesplazar();
+
+            btnArriba.addEventListener("click", function () {
+                window.scrollTo({ top: 0 });
+                document.querySelector(".logo").focus();
+            });
+        })();
+    </script>
 </body>
+
 </html>
